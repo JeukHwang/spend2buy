@@ -59,7 +59,7 @@ function Home() {
   return (
     <>
       <div css={[w("fill"), h("fill"), center, column, gap(8)]}>
-        <h1>Spend2buy</h1>
+        <h1>Spend2Buy</h1>
         <div
           css={[row, center, gap(8), text.titleM, w("fill")]}
           style={{
