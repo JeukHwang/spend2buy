@@ -1,13 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useMemo, useState } from "react";
+import "./App.css";
+import reactLogo from "./assets/react.svg";
+import Table from "./table";
+import viteLogo from "/vite.svg";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
+  const columns = useMemo(
+    () => [
+      { accessor: "value", Header: "Value" },
+      { accessor: "cost", Header: "Cost" },
+      { accessor: "amount", Header: "Amount" },
+    ],
+    []
+  );
+  const data = useMemo(
+    () => [
+      { value: 10, cost: 1, amount: 10 },
+      { value: 10, cost: 1, amount: 10 },
+      { value: 10, cost: 1, amount: 10 },
+    ],
+    []
+  );
   return (
     <>
+      <Table columns={columns} data={data} />
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -29,7 +47,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
