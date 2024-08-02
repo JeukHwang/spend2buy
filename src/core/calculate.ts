@@ -39,6 +39,7 @@ export class Calculator {
     for (const option of Object.values(options)) {
       option.value *= 10 ** fraction / gcd;
     }
+    x = Math.ceil(x);
 
     // dp
     const data: Memo[] = Array(

@@ -30,6 +30,8 @@ const debounce = <T extends (...args: any[]) => any>(fn: T, delay: number) => {
 };
 
 function Home() {
+  //   Calculator.test();
+
   const inputRef = useRef<HTMLInputElement>(null);
   const [preset, setPreset] = useState<Preset | null>(null);
   const [value, setValue] = useState<number | null>(null);
@@ -73,6 +75,7 @@ function Home() {
             placeholder="123"
             inputMode="numeric"
             type="number"
+            min={1}
             onChange={debouncedOnChange}
           />
           <p css={[w("hug")]}>with minimal cost for</p>
@@ -81,7 +84,7 @@ function Home() {
         {result && (
           <p css={[w("hug"), text.labelL]}>
             {`Buy ${result.value} ${preset!.valueUnit} ${
-              result.value - value! ? `(+${result.value - value!})` : null
+              result.value - value! ? `(+${result.value - value!})` : ""
             } with ${preset!.costUnit}${result.cost}`}
           </p>
         )}
@@ -93,7 +96,7 @@ function Home() {
         css={[w("hug"), text.labelL, column, align.end]}
         style={{ position: "absolute", right: "10px", bottom: "10px" }}
       >
-        <p>To update or add new preset for other game,</p>
+        <p>To report bug, update data, or add new game,</p>
         <p>contact me with jeukhwang.dev(at)gmail.com</p>
       </div>
     </>
