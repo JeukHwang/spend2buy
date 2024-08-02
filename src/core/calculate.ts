@@ -4,6 +4,7 @@ export type Preset = {
   valueUnit: string;
   costUnit: string;
   options: { [key in string]: Option };
+  updatedAt: Date;
 };
 type Memo = [number, string, number, number]; //  [base, option_name, sum_cost, counter] while index = sum_value
 type Testcase = [Preset["options"], number, { [key in string]: number }];

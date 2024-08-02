@@ -2,7 +2,7 @@ import { Preset } from "./calculate";
 
 const presets: Preset[] = [
   {
-    name: "IdentityV - EU",
+    name: "IdentityV - Echo - EU",
     valueUnit: "echo",
     costUnit: "€",
     options: {
@@ -15,9 +15,10 @@ const presets: Preset[] = [
       "4030+205": { value: 4030 + 205, cost: 59.99 },
       "8100+415": { value: 8100 + 415, cost: 119.99 },
     },
+    updatedAt: new Date("2024-01-06"),
   },
   {
-    name: "IdentityV - US",
+    name: "IdentityV - Echo - US",
     valueUnit: "echo",
     costUnit: "$",
     options: {
@@ -30,6 +31,89 @@ const presets: Preset[] = [
       "3330+168": { value: 3330 + 168, cost: 49.99 },
       "6590+328": { value: 6590 + 328, cost: 99.99 },
     },
+    updatedAt: new Date("2024-08-02"),
+  },
+  {
+    name: "Genshin Impact - 창세의 결정 - KR - PC/Android",
+    valueUnit: "창세의 결정",
+    costUnit: "₩",
+    options: {
+      "60+0": { value: 60 + 0, cost: 1200 },
+      "300+30": { value: 300 + 30, cost: 5900 },
+      "980+110": { value: 980 + 110, cost: 19000 },
+      "1980+260": { value: 1980 + 260, cost: 37000 },
+      "3280+600": { value: 3280 + 600, cost: 65000 },
+      "6400+1600": { value: 6400 + 1600, cost: 119000 },
+    },
+    updatedAt: new Date("2024-08-02"),
+  },
+  {
+    name: "Genshin Impact - 창세의 결정 - KR - iOS/iPadOS",
+    valueUnit: "창세의 결정",
+    costUnit: "₩",
+    options: {
+      "60+0": { value: 60 + 0, cost: 1400 },
+      "300+30": { value: 300 + 30, cost: 7100 },
+      "980+110": { value: 980 + 110, cost: 22000 },
+      "1980+260": { value: 1980 + 260, cost: 44000 },
+      "3280+600": { value: 3280 + 600, cost: 75000 },
+      "6400+1600": { value: 6400 + 1600, cost: 141000 },
+    },
+    updatedAt: new Date("2024-08-02"),
+  },
+  {
+    name: "Genshin Impact - 창세의 결정 - KR - PlayStation",
+    valueUnit: "창세의 결정",
+    costUnit: "₩",
+    options: {
+      "60+0": { value: 60 + 0, cost: 1200 },
+      "300+30": { value: 300 + 30, cost: 5800 },
+      "980+110": { value: 980 + 110, cost: 16800 },
+      "1980+260": { value: 1980 + 260, cost: 34800 },
+      "3280+600": { value: 3280 + 600, cost: 54800 },
+      "6400+1600": { value: 6400 + 1600, cost: 109800 },
+    },
+    updatedAt: new Date("2024-08-02"),
+  },
+  {
+    name: "Genshin Impact - 창세의 결정 - KR - PlayStation",
+    valueUnit: "창세의 결정",
+    costUnit: "₩",
+    options: {
+      "60+0": { value: 60 + 0, cost: 1200 },
+      "300+30": { value: 300 + 30, cost: 5800 },
+      "980+110": { value: 980 + 110, cost: 16800 },
+      "1980+260": { value: 1980 + 260, cost: 34800 },
+      "3280+600": { value: 3280 + 600, cost: 54800 },
+      "6400+1600": { value: 6400 + 1600, cost: 109800 },
+    },
+    updatedAt: new Date("2024-08-02"),
+  },
+  {
+    name: "Brawl Stars - Gem - KR",
+    valueUnit: "Gem",
+    costUnit: "₩",
+    options: {
+      "30": { value: 30, cost: 3000 },
+      "80": { value: 80, cost: 7500 },
+      "170": { value: 170, cost: 15000 },
+      "360": { value: 360, cost: 30000 },
+      "950": { value: 950, cost: 79000 },
+      "2000": { value: 2000, cost: 149000 },
+    },
+    updatedAt: new Date("2024-08-02"),
+  },
+  {
+    name: "Brawl Stars - Coin",
+    valueUnit: "Coin",
+    costUnit: "Gem",
+    options: {
+      "300": { value: 300, cost: 30 },
+      "880": { value: 880, cost: 80 },
+      "2040": { value: 2040, cost: 170 },
+      "4680": { value: 4680, cost: 360 },
+    },
+    updatedAt: new Date("2024-08-02"),
   },
 ];
 
