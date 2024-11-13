@@ -100,7 +100,7 @@ export class Calculator {
     const cost = parseFloat(
       (data[optimal!][2] / (10 ** fraction / gcd)).toFixed(precision),
     );
-    return { value: optimal!, cost, choice };
+    return { value: (optimal! * gcd) / 10 ** fraction, cost, choice };
   }
 
   static test() {
