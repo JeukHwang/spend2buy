@@ -26,6 +26,9 @@ export class Calculator {
     options: Preset["options"],
     x: number,
   ): { value: number; cost: number; choice: { [key in string]: number } } {
+    // deep-copy options
+    options = JSON.parse(JSON.stringify(options));
+
     // reduce
     const fraction = Math.max(
       ...Object.values(options).map((option) => {
