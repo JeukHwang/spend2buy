@@ -83,9 +83,9 @@ function Home() {
         </div>
         {result && (
           <p css={[w("hug"), text.labelL]}>
-            {`Buy ${result.value} ${preset!.valueUnit} ${
+            {`Buy ${preset!.valueFunc(result.value)} ${
               result.value - value! ? `(+${result.value - value!})` : ""
-            } with ${preset!.costUnit}${result.cost}`}
+            } with ${preset!.costFunc(result.cost)}`}
           </p>
         )}
         {preset !== null && (

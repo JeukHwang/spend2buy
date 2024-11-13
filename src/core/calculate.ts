@@ -3,6 +3,8 @@ export type Preset = {
   name: string;
   valueUnit: string;
   costUnit: string;
+  valueFunc: (x: number) => string;
+  costFunc: (x: number) => string;
   options: { [key in string]: Option };
   updatedAt: Date;
 };

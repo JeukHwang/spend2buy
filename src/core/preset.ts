@@ -3,8 +3,10 @@ import { Preset } from "./calculate";
 const presets: Preset[] = [
   {
     name: "IdentityV - Echo - EU",
-    valueUnit: "echo",
+    valueUnit: "Echo",
     costUnit: "€",
+    valueFunc: (x) => `${x} echo`,
+    costFunc: (x) => `€${x}`,
     options: {
       "72+0": { value: 72 + 0, cost: 1.19 },
       "218+11": { value: 218 + 11, cost: 3.49 },
@@ -19,8 +21,10 @@ const presets: Preset[] = [
   },
   {
     name: "IdentityV - Echo - US",
-    valueUnit: "echo",
+    valueUnit: "Echo",
     costUnit: "$",
+    valueFunc: (x) => `${x} echo`,
+    costFunc: (x) => `$${x}`,
     options: {
       "60+0": { value: 60 + 0, cost: 0.99 },
       "185+9": { value: 185 + 9, cost: 2.99 },
@@ -37,6 +41,8 @@ const presets: Preset[] = [
     name: "Genshin Impact - 창세의 결정 - KR - PC/Android",
     valueUnit: "창세의 결정",
     costUnit: "₩",
+    valueFunc: (x) => `${x} 창세의 결정`,
+    costFunc: (x) => `₩${x}`,
     options: {
       "60+0": { value: 60 + 0, cost: 1200 },
       "300+30": { value: 300 + 30, cost: 5900 },
@@ -51,6 +57,8 @@ const presets: Preset[] = [
     name: "Genshin Impact - 창세의 결정 - KR - iOS/iPadOS",
     valueUnit: "창세의 결정",
     costUnit: "₩",
+    valueFunc: (x) => `${x} 창세의 결정`,
+    costFunc: (x) => `₩${x}`,
     options: {
       "60+0": { value: 60 + 0, cost: 1400 },
       "300+30": { value: 300 + 30, cost: 7100 },
@@ -65,6 +73,8 @@ const presets: Preset[] = [
     name: "Genshin Impact - 창세의 결정 - KR - PlayStation",
     valueUnit: "창세의 결정",
     costUnit: "₩",
+    valueFunc: (x) => `${x} 창세의 결정`,
+    costFunc: (x) => `₩${x}`,
     options: {
       "60+0": { value: 60 + 0, cost: 1200 },
       "300+30": { value: 300 + 30, cost: 5800 },
@@ -79,6 +89,8 @@ const presets: Preset[] = [
     name: "Genshin Impact - 창세의 결정 - KR - PlayStation",
     valueUnit: "창세의 결정",
     costUnit: "₩",
+    valueFunc: (x) => `${x} 창세의 결정`,
+    costFunc: (x) => `₩${x}`,
     options: {
       "60+0": { value: 60 + 0, cost: 1200 },
       "300+30": { value: 300 + 30, cost: 5800 },
@@ -93,6 +105,8 @@ const presets: Preset[] = [
     name: "Brawl Stars - Gem - KR",
     valueUnit: "Gem",
     costUnit: "₩",
+    valueFunc: (x) => `${x} gem`,
+    costFunc: (x) => `₩${x}`,
     options: {
       "30": { value: 30, cost: 3000 },
       "80": { value: 80, cost: 7500 },
@@ -107,6 +121,8 @@ const presets: Preset[] = [
     name: "Brawl Stars - Coin",
     valueUnit: "Coin",
     costUnit: "Gem",
+    valueFunc: (x) => `${x} coin`,
+    costFunc: (x) => `${x} gem`,
     options: {
       "300": { value: 300, cost: 30 },
       "880": { value: 880, cost: 80 },
@@ -119,6 +135,8 @@ const presets: Preset[] = [
     name: "Clash of Clans - Gem",
     valueUnit: "Gem",
     costUnit: "$",
+    valueFunc: (x) => `${x} gem`,
+    costFunc: (x) => `$${x}`,
     options: {
       "Pocketful of Gems": { value: 80, cost: 0.99 },
       "Pile of Gems": { value: 500, cost: 4.99 },
