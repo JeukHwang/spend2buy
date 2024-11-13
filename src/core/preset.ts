@@ -115,6 +115,20 @@ const presets: Preset[] = [
     },
     updatedAt: new Date("2024-08-02"),
   },
+  {
+    name: "Clash of Clans - Gem",
+    valueUnit: "Gem",
+    costUnit: "$",
+    options: {
+      "Pocketful of Gems": { value: 80, cost: 0.99 },
+      "Pile of Gems": { value: 500, cost: 4.99 },
+      "Bag of Gems": { value: 1200, cost: 9.99 },
+      "Sack of Gems": { value: 2500, cost: 19.99 },
+      "Box of Gems": { value: 6500, cost: 49.99 },
+      "Chest of Gems": { value: 14000, cost: 99.99 },
+    },
+    updatedAt: new Date("2024-11-13"),
+  },
 ];
 
 export default presets;
