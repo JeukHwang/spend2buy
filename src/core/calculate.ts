@@ -97,9 +97,7 @@ export class Calculator {
         return f[1] ? f[1].length : 0;
       }),
     );
-    const cost = parseFloat(
-      (data[optimal!][2] / (10 ** fraction / gcd)).toFixed(precision),
-    );
+    const cost = parseFloat(data[optimal!][2].toFixed(precision));
     return { value: (optimal! * gcd) / 10 ** fraction, cost, choice };
   }
 
